@@ -9,14 +9,11 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
-// app.use(
-//   cors({
-//     origin: "http://localhost:5173/dashboard", // Vite dev server
-//     credentials: true,
-//   })
-// );
-app.use(cors({ origin: process.env.CORS_ORIGIN, credentials: true }))
+app.use(cors({
+  origin: "https://authheaven.vercel.app", 
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 
 
