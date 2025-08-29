@@ -61,6 +61,11 @@ router.get("/me", auth, async (req, res) => {
     }
 });
 
+app.get('/health', (req, res) => res.json({ ok: true }))
+
+
+
+
 
 
 export default router;
