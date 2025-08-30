@@ -9,11 +9,14 @@ connectDB();
 
 const app = express();
 
-app.use(cors({
-  origin: "https://authheaven.vercel.app", 
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(cors());
+
+
+// app.use(cors({
+//   origin: "https://authhaven.vercel.app/", 
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   credentials: true
+// }));
 
 
 
